@@ -1,0 +1,9 @@
+---
+applications:
+- name: rshinyapp
+  memory: 128M
+  instances: 1
+  buildpack: https://github.com/beibeiyang/cf-buildpack-r.git
+  env:
+    CRAN_MIRROR: http://cran.rstudio.com
+  random-route: true
